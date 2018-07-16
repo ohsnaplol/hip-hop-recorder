@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		174365B620FC6868003E1CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174365B520FC6868003E1CD2 /* AppDelegate.swift */; };
+		174365B820FC6868003E1CD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174365B720FC6868003E1CD2 /* ViewController.swift */; };
+		174365BB20FC6868003E1CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174365B920FC6868003E1CD2 /* Main.storyboard */; };
+		174365BE20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 174365BC20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodeld */; };
+		174365C020FC6869003E1CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174365BF20FC6869003E1CD2 /* Assets.xcassets */; };
+		174365C320FC6869003E1CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174365C120FC6869003E1CD2 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		174365B220FC6868003E1CD2 /* hip-hop-recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hip-hop-recorder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		174365B520FC6868003E1CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		174365B720FC6868003E1CD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		174365BA20FC6868003E1CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		174365BD20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hip_hop_recorder.xcdatamodel; sourceTree = "<group>"; };
+		174365BF20FC6869003E1CD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		174365C220FC6869003E1CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		174365C420FC6869003E1CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		174365AF20FC6868003E1CD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		174365A920FC6868003E1CD2 = {
+			isa = PBXGroup;
+			children = (
+				174365B420FC6868003E1CD2 /* hip-hop-recorder */,
+				174365B320FC6868003E1CD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		174365B320FC6868003E1CD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				174365B220FC6868003E1CD2 /* hip-hop-recorder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		174365B420FC6868003E1CD2 /* hip-hop-recorder */ = {
+			isa = PBXGroup;
+			children = (
+				174365B520FC6868003E1CD2 /* AppDelegate.swift */,
+				174365B720FC6868003E1CD2 /* ViewController.swift */,
+				174365B920FC6868003E1CD2 /* Main.storyboard */,
+				174365BF20FC6869003E1CD2 /* Assets.xcassets */,
+				174365C120FC6869003E1CD2 /* LaunchScreen.storyboard */,
+				174365C420FC6869003E1CD2 /* Info.plist */,
+				174365BC20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodeld */,
+			);
+			path = "hip-hop-recorder";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		174365B120FC6868003E1CD2 /* hip-hop-recorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 174365C720FC6869003E1CD2 /* Build configuration list for PBXNativeTarget "hip-hop-recorder" */;
+			buildPhases = (
+				174365AE20FC6868003E1CD2 /* Sources */,
+				174365AF20FC6868003E1CD2 /* Frameworks */,
+				174365B020FC6868003E1CD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hip-hop-recorder";
+			productName = "hip-hop-recorder";
+			productReference = 174365B220FC6868003E1CD2 /* hip-hop-recorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		174365AA20FC6868003E1CD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Marcello Galvan";
+				TargetAttributes = {
+					174365B120FC6868003E1CD2 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 174365AD20FC6868003E1CD2 /* Build configuration list for PBXProject "hip-hop-recorder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 174365A920FC6868003E1CD2;
+			productRefGroup = 174365B320FC6868003E1CD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				174365B120FC6868003E1CD2 /* hip-hop-recorder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		174365B020FC6868003E1CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174365C320FC6869003E1CD2 /* LaunchScreen.storyboard in Resources */,
+				174365C020FC6869003E1CD2 /* Assets.xcassets in Resources */,
+				174365BB20FC6868003E1CD2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		174365AE20FC6868003E1CD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174365B820FC6868003E1CD2 /* ViewController.swift in Sources */,
+				174365BE20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodeld in Sources */,
+				174365B620FC6868003E1CD2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		174365B920FC6868003E1CD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				174365BA20FC6868003E1CD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		174365C120FC6869003E1CD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				174365C220FC6869003E1CD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		174365C520FC6869003E1CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		174365C620FC6869003E1CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		174365C820FC6869003E1CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FAH4ND3XL7;
+				INFOPLIST_FILE = "hip-hop-recorder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcellogalvan.hip-hop-recorder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		174365C920FC6869003E1CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FAH4ND3XL7;
+				INFOPLIST_FILE = "hip-hop-recorder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcellogalvan.hip-hop-recorder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		174365AD20FC6868003E1CD2 /* Build configuration list for PBXProject "hip-hop-recorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174365C520FC6869003E1CD2 /* Debug */,
+				174365C620FC6869003E1CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		174365C720FC6869003E1CD2 /* Build configuration list for PBXNativeTarget "hip-hop-recorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174365C820FC6869003E1CD2 /* Debug */,
+				174365C920FC6869003E1CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		174365BC20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				174365BD20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodel */,
+			);
+			currentVersion = 174365BD20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodel */;
+			path = hip_hop_recorder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 174365AA20FC6868003E1CD2 /* Project object */;
+}
