@@ -13,6 +13,8 @@
 		174365BE20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 174365BC20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodeld */; };
 		174365C020FC6869003E1CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174365BF20FC6869003E1CD2 /* Assets.xcassets */; };
 		174365C320FC6869003E1CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174365C120FC6869003E1CD2 /* LaunchScreen.storyboard */; };
+		17A272BC21008F8000F942EA /* song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A272BB21008F8000F942EA /* song.swift */; };
+		17A272BE210095A200F942EA /* track-controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A272BD210095A200F942EA /* track-controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		174365BF20FC6869003E1CD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		174365C220FC6869003E1CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		174365C420FC6869003E1CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A272BB21008F8000F942EA /* song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = song.swift; path = "hip-hop-recorder/Model/song.swift"; sourceTree = SOURCE_ROOT; };
+		17A272BD210095A200F942EA /* track-controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "track-controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		174365B420FC6868003E1CD2 /* hip-hop-recorder */ = {
 			isa = PBXGroup;
 			children = (
+				174365CC20FC6B37003E1CD2 /* Controllers */,
+				174365CB20FC6B26003E1CD2 /* Model */,
+				174365CA20FC6B21003E1CD2 /* Views */,
 				174365B520FC6868003E1CD2 /* AppDelegate.swift */,
-				174365B720FC6868003E1CD2 /* ViewController.swift */,
-				174365B920FC6868003E1CD2 /* Main.storyboard */,
 				174365BF20FC6869003E1CD2 /* Assets.xcassets */,
 				174365C120FC6869003E1CD2 /* LaunchScreen.storyboard */,
 				174365C420FC6869003E1CD2 /* Info.plist */,
 				174365BC20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodeld */,
 			);
 			path = "hip-hop-recorder";
+			sourceTree = "<group>";
+		};
+		174365CA20FC6B21003E1CD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				174365B720FC6868003E1CD2 /* ViewController.swift */,
+				174365B920FC6868003E1CD2 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		174365CB20FC6B26003E1CD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17A272BB21008F8000F942EA /* song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		174365CC20FC6B37003E1CD2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17A272BD210095A200F942EA /* track-controller.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A272BC21008F8000F942EA /* song.swift in Sources */,
 				174365B820FC6868003E1CD2 /* ViewController.swift in Sources */,
 				174365BE20FC6868003E1CD2 /* hip_hop_recorder.xcdatamodeld in Sources */,
+				17A272BE210095A200F942EA /* track-controller.swift in Sources */,
 				174365B620FC6868003E1CD2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
