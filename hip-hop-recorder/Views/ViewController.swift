@@ -11,7 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController, AVAudioRecorderDelegate  {
     
-    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet var recordButton: UIButton!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     
@@ -27,13 +27,15 @@ class ViewController: UIViewController, AVAudioRecorderDelegate  {
             recordingSession.requestRecordPermission() { [unowned self] allowed in
                 DispatchQueue.main.async {
                     if allowed {
-                        
+                        print("allowed")
                     } else {
+                        print("not allowed")
                         // failed to record!
                     }
                 }
             }
         } catch {
+            print("failure")
             // failed to record!
         }
     }
@@ -71,7 +73,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate  {
         }
     }
     
-    @objc func recordTapped() {
+    @IBAction func recordTapped(_ sender: Any) {
         if audioRecorder == nil {
             startRecording()
         } else {
