@@ -7,12 +7,30 @@
 //
 
 import Foundation
-import CoreAudio
+import AVFoundation
 
 class Song {
-    let title: String = ""
-    let artist: String = ""
-    let beatArtist: String = ""
-//    let userTrack: AudioBuffer
-//    let backgroundTrack: AudioBuffer
+    
+    var title: String = ""
+    var notes: String = ""
+    var beatArtist: String = ""
+
+    var beatTrackFile = AVAudioFile()
+    let userVoice = AVAudioFormat()
+    
+    init() {
+        let url: URL = Bundle.main.url(forResource: "21 Open Up (Instrumental) (Bonus)", withExtension: "mp3")!
+        do {
+            try setSong(url)
+        } catch {
+            print(error)
+        }
+        
+    }
+    
+    func setSong(_ url: URL) throws  {
+        beatTrackFile = try AVAudioFile(forReading: url)
+    }
 }
+
+
