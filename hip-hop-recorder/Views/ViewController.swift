@@ -9,14 +9,18 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVAudioRecorderDelegate  {
+class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDelegate  {
     
+    @IBOutlet weak var titleField: UITextField!
     @IBOutlet var recordButton: UIButton!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
+    var currentSong = Song()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.titleField.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
 //        fillTable(collection: <#T##Array<Any>#>)
         recordingSession = AVAudioSession.sharedInstance()
@@ -89,6 +93,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate  {
     
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        print(paths)
         return paths[0]
     }
 
@@ -102,6 +107,15 @@ class ViewController: UIViewController, AVAudioRecorderDelegate  {
 //        recordingsCollection.
     }
 
+//    Hide keyboard when user touches outside of keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+//    Hide keyboard when user hits done
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
 }
 
