@@ -9,18 +9,22 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDelegate  {
+class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, AVAudioRecorderDelegate  {
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet var recordButton: UIButton!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
+    var songs: [URL] = []
     var currentSong = Song()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.titleField.delegate = self
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view, typically from a nib.
 //        fillTable(collection: <#T##Array<Any>#>)
         recordingSession = AVAudioSession.sharedInstance()
@@ -41,6 +45,15 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
         } catch {
             print("failure")
             // failed to record!
+        }
+        
+        let fm = FileManager.default
+        let documentsURL = getDocumentsDirectory()
+        
+        do {
+            songs = try fm.contentsOfDirectory(at: documentsURL, includingPropertiesForKeys: nil, options: [])
+        } catch {
+            // failed to read directory – bad permissions, perhaps?
         }
     }
     
@@ -115,6 +128,17 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    //    MARK: Table view
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return songs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell0", for: indexPath)
+        cell.textLabel?.text = songs[indexPath.row].lastPathComponent
+        return cell
     }
 
 }
